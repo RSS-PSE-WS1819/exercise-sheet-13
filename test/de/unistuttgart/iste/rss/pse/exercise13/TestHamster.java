@@ -43,7 +43,7 @@ public class TestHamster {
     public void testConfiguredHamsterOnTerritory() {
         game.runGame(territory -> {
             final Hamster paule = territory.getDefaultHamster();
-            assertEquals(territory.getTerritorySize(), new Size(TERRITORY_SIZE, TERRITORY_SIZE));
+            assertEquals(new Size(TERRITORY_SIZE, TERRITORY_SIZE), territory.getTerritorySize());
             assertEquals(Location.ORIGIN, paule.getLocation());
             assertEquals(1, territory.getTotalGrainCount());
         });
