@@ -1,8 +1,6 @@
 package de.unistuttgart.iste.rss.pse.exercise13;
 import static org.junit.Assert.assertEquals;
 
-import java.io.IOException;
-
 import org.junit.Test;
 
 import de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes.Direction;
@@ -11,6 +9,8 @@ import de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes.Size;
 import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Hamster;
 import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.HamsterGame;
 import de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model.territory.TerritoryBuilder;
+
+import javafx.beans.property.Property;
 
 public class TestHamster {
 
@@ -23,7 +23,7 @@ public class TestHamster {
      * Test creating a territory via API.
      */
     @Test
-    public void testHamsterOnTerritory() {
+    public void testConfiguredHamsterOnTerritory() {
     	HamsterGame game = new HamsterGame();
     	Hamster paule = game.getTerritory().getDefaultHamster();
     	
@@ -43,6 +43,4 @@ public class TestHamster {
         assertEquals(game.getTerritory().getTotalGrainCount(), 0);
     }
 
-}
-	
 }

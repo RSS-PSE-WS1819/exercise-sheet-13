@@ -3,11 +3,6 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.build"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.core"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.main"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.parent"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.oo.hamstersimulator.ui"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/de.unistuttgart.iste.rss.utils"/>
+	<classpathentry kind="lib" path="libs/rss-hamstersimulator-1.0.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
