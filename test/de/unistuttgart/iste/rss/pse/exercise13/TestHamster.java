@@ -19,9 +19,12 @@ public class TestHamster {
      */
     private static final int TERRITORY_SIZE = 4;
     private HamsterGame game;
-
-    @Before
-    public void init() {
+    
+    /**
+     * Test creating a territory via API.
+     */
+    @Test
+    public void testConfiguredHamsterOnTerritory() {
         game = new HamsterGame();
 
         final TerritoryBuilder territoryBuilder = game.getNewTerritoryBuilder();
@@ -34,18 +37,13 @@ public class TestHamster {
 
         game.initialize(territoryBuilder);
         game.startGame(false);
-    }
-    
-    /**
-     * Test creating a territory via API.
-     */
-    @Test
-    public void testConfiguredHamsterOnTerritory() {
+
+    	
         game.runGame(territory -> {
             final Hamster paule = territory.getDefaultHamster();
             assertEquals(new Size(TERRITORY_SIZE, TERRITORY_SIZE), territory.getTerritorySize());
             assertEquals(Location.ORIGIN, paule.getLocation());
-            assertEquals(1, territory.getTotalGrainCount());
+            assertEquals(0, territory.getTotalGrainCount());
         });
     }
 
