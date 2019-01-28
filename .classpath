@@ -7,10 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-<<<<<<< Upstream, based on branch 'master' of git@github.com:RSS-PSE-WS1819/exercise-sheet-13.git
-	<classpathentry exported="true" kind="lib" path="libs/rss-hamstersimulator-1.0.5.jar"/>
-=======
 	<classpathentry kind="lib" path="libs/rss-hamstersimulator-1.0.6.jar"/>
->>>>>>> 295b8e7 Using Hamster v1.0.6 now
 	<classpathentry kind="output" path="bin"/>
 </classpath>
